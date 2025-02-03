@@ -1,7 +1,7 @@
 services:
   - type: web
     name: cluster
-    branch: ENV
+    branch: omega
     plan: free
     dockerfilePath: ./Dockerfile
     repo: https://github.com/mysterydemon/Botclusters
