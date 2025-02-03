@@ -24,6 +24,9 @@ RUN chmod +x /usr/local/bin/install.sh
 COPY requirements.txt ./
 RUN echo "supervisor" >> requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
+
+COPY --from=mwader/static-ffmpeg:7.1 /ffmpeg /bin/ffmpeg
+COPY --from=mwader/static-ffmpeg:7.1 /ffprobe /bin/ffprobe
 COPY . .
 
 EXPOSE 5000
