@@ -4,9 +4,9 @@ services:
     branch: main
     plan: free
     dockerfilePath: ./Dockerfile
-    repo: https://github.com/mysterydemon/Botclusters
+    repo: https://github.com/samudhan2008/BotClusters
     env: docker
     envVars:
       - key: CLUSTER_01
-        sync: false
+        sync: true
     autoDeploy: false
