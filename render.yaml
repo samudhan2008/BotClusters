@@ -8,5 +8,5 @@ services:
     env: docker
     envVars:
       - key: CLUSTER_01
-        sync: true
+        sync: false
     autoDeploy: false
